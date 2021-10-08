@@ -7,3 +7,20 @@ Once all issues found have been fixed by the affected vendors, we will publish h
 ## IEEE EDOC 2021 paper
 
 The bachelor's thesis was later rewritten into a conference paper with the help of Viktor Engström, and Robert Lagerström. The paper was submitted to [IEEE EDOC 2021](https://ieee-edoc.org/2021/) and got accepted.
+
+## Systems investigated
+
+Here is the de-anonymization of the systems we investigated:
+
+- P3 - ???
+- P4 - ???
+- P2 - ???
+- P5 - ???
+- P1 - ???
+- P6 - ???
+- S1 - [Gunicorn](https://gunicorn.org/)
+- S2 - ???
+- S3 - ???
+- S4 - ???
+- S5 - ???
+- S6 - ???
