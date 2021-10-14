@@ -24,3 +24,7 @@ Here is the de-anonymization of the systems we investigated:
 - S4 - ???
 - S5 - ???
 - S6 - ???
+
+## Errata
+
+After the thesis was published, we realized that we had interpreted the situation with `Transfer-Encoding: chunked` and HTTP version 1.0 incorrectly. It was very unclear what a correct interpretation was. So we opened an issue on the specification. [Here](https://github.com/httpwg/http-core/issues/879) is the discussion that followed. This resulted in a change in the specification.
