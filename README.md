@@ -1,3 +1,6 @@
+
+### [Quick link to research](https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf)
+
 # Bachelor's thesis on HTTP Request Smuggling
 
 During the spring of 2021, we (Mattias Grenfeldt and Asta Olofsson) wrote our bachelor's thesis in Computer Science at KTH Royal Institute of Technology in Sweden. We studied HTTP Request Smuggling. The thesis can be found [here](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-302371).
