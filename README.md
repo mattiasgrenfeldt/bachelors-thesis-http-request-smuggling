@@ -15,18 +15,18 @@ The bachelor's thesis was later rewritten into a conference paper with the help 
 
 Here is the de-anonymization of the systems we investigated:
 
+- P1 - [Apache HTTP Server (httpd)](http://httpd.apache.org/)
+- P2 - [Nginx](https://nginx.org/)
 - P3 - ???
-- P4 - ???
-- P2 - ???
-- P5 - ???
-- P1 - ???
-- P6 - ???
+- P4 - [HAProxy](http://www.haproxy.org/)
+- P5 - [Traefik](https://traefik.io/)
+- P6 - [Caddy](https://caddyserver.com/)
 - S1 - [Gunicorn](https://gunicorn.org/)
-- S2 - ???
-- S3 - ???
-- S4 - ???
-- S5 - ???
-- S6 - ???
+- S2 - [Actix](https://actix.rs/)
+- S3 - [Node.js](https://nodejs.org/en/)
+- S4 - [Puma](https://puma.io/)
+- S5 - [hyper](https://hyper.rs/)
+- S6 - [Golang (net/http)](https://pkg.go.dev/net/http)
 
 ## Errata
 
