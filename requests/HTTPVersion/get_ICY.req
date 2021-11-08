@@ -1,0 +1,4 @@
+GET / ICY
+Host: localhost
+Connection: close
+

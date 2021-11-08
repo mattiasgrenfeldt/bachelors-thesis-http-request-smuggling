@@ -1,0 +1,3 @@
+:80
+
+reverse_proxy host.docker.internal:7004

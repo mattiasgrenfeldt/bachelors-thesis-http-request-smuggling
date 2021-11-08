@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body, html {
+                width: max-content;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: max-content repeat({{.Columns}}, max-content);
+            }
+            .header {
+                grid-row: 1 / span 2;
+                display: flex;
+                align-items: center;
+            }
+            .container div {
+                padding: 10px;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+            }
+            pre, h4 {
+                margin: 0;
+                padding: 0;
+            }
+            .cr, .lf, .crlf, .tab, .hex {
+                color: red;
+            }
+            .left {
+                background: #fff;
+                left: 0;
+                position: sticky;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Servers</h1>
+        <div class="container">
+            <div class="header left">
+                <h4>Service / Request</h4>
+            </div>
+            {{range .Requests}}
+                <div>
+                    <h4>{{.Name}}</h4>
+                </div>
+            {{end}}
+
+            {{range .Requests}}
+                <div>
+                    <code>
+                        <pre>{{printf "%s" .Data}}</pre>
+                    </code>
+                </div>
+            {{end}}
+        
+            {{range .ServerResults}}
+                <div class="left">
+                    <h4>{{.Name}}</h4>
+                </div>
+                {{range .Responses}}
+                    <div>
+                        <code>
+                            <pre>{{.}}</pre>
+                        </code>
+                    </div>
+                {{end}}
+            {{end}}
+        </div>
+        <h1>Proxies</h1>
+        <div class="container">
+            <div class="header left">
+                <h4>Service / Request</h4>
+            </div>
+            {{range .Requests}}
+                <div>
+                    <h4>{{.Name}}</h4>
+                </div>
+            {{end}}
+
+            {{range .Requests}}
+                <div>
+                    <code>
+                        <pre>{{printf "%s" .Data}}</pre>
+                    </code>
+                </div>
+            {{end}}
+        
+            {{range $i, $pr := .ProxyResults}}
+                <div class="left" style="grid-row: calc(3 + 2*({{$i}})) / span 2;">
+                    <h4>{{$pr.Name}}</h4>
+                </div>
+                {{range $pr.Responses}}
+                    <div>
+                        <code>
+                            <pre>{{.}}</pre>
+                        </code>
+                    </div>
+                {{end}}
+                {{range $pr.BackendResponses}}
+                    <div>
+                        <code>
+                            <pre>{{.}}</pre>
+                        </code>
+                    </div>
+                {{end}}
+            {{end}}
+        </div>
+    </body>
+</html>

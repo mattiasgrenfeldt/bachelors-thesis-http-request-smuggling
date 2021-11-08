@@ -5,7 +5,7 @@
 
 During the spring of 2021, we (Mattias Grenfeldt and Asta Olofsson) wrote our bachelor's thesis in Computer Science at KTH Royal Institute of Technology in Sweden. We studied HTTP Request Smuggling. The thesis can be found [here](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-302371).
 
-Once all issues found have been fixed by the affected vendors, we will publish here the code used for the test harness, the test requests and which systems are which in the anonymized report.
+You can find the code for the test harness used in `/test-harness` and you can find the requests used to search for bugs with in `/requests`.
 
 ## IEEE EDOC 2021 paper
 

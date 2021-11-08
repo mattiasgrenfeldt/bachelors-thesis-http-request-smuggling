@@ -1,0 +1,4 @@
+GET / HTTP/1.01
+Host: localhost
+Connection: close
+
